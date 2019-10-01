@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block content %}
+    <h1>Loops</h1>
+    <hr />
+    {% if loops|length > 0 %} 
+        {% for l in loops %}
+            <div>
+                <h2>{{ l.name }}</h2>
+                <p>{{ l.description }}</p>
+                <hr />
+            </div>
+        {% endfor %} 
+    {% endif %}
+{% endblock %}

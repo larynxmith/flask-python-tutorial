@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> All About {{ operator.name }}</h1>
+<p>{{ operator.description }}</p>
+
+<h2>{{ operator.name }} is deployed with "{{ operator.symbol }}".</h2>
+<h2> For example: </h2>
+<hr />
+<h3><strong>{{ operator.example }}</strong></h3>
+<hr />
+<p>{{ operator.uses }}</p>
+{% endblock %}

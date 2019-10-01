@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ operators|length }} Operators</h1>
+<div>
+    {% if operators|length > 0 %}
+    {% for o in operators %}
+    <div>
+        <a href="/operators/{{ o._id }}">
+            {{ o.name }}
+        </a>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>No Operators Yet!</p>
+    {% endif %}
+</div>
+<hr />
+<h2>Add a New Operator</h2>
+<form method="post" action="/operators/">
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" class="form-input" />
+    </div>
+    <div>
+        <label for="description">Description:</label>
+        <input id="description" name="description" class="form-input" />
+    </div>
+    <div>
+        <label for="symbol">Symbol:</label>
+        <input id="symbol" name="symbol" class="form-input" />
+    </div>
+    <div>
+        <label for="example">Example:</label>
+        <input id="example" name="example" class="form-input" />
+    </div>
+    <div>
+        <label for="uses">Uses:</label>
+        <input id="uses" name="uses" class="form-input" />
+    </div>
+    <input type="submit">
+</form>
+{% endblock %}

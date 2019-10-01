@@ -1,5 +1,72 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 10px;
+    color: green;
+}
+
+nav {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right:  20px;
+
+}
+a {
+    text-decoration: none;
+    color: green;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.logo {
+    max-height: 20px;
+    width: auto;
+    float: left;
+}
+
+.container {
+    padding: 0 15px;
+    background-color: #eee;
+    margin: 0 15px 0 15px;
+    padding-bottom: 15px;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+}
+
+.btn {
+    color: mediumspringgreen;
+    background-color: black;
+    padding: 3px 25px;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: mediumspringgreen;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid gray;
 }
